@@ -1,0 +1,251 @@
+using UnityEngine;
+
+public class epico : MonoBehaviour
+{
+    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    void Start()
+    {
+        string enemigos = { "Orco", "Muerto", "Zombie", "Muerto", "Boss" };
+        foreach (string enemigo in enemigos)
+        {
+            if (enemigo == "Muerto")
+            {
+                continue;
+            }
+
+            Debug.Log(enemigo);
+        }
+    }
+
+    
+    {
+        
+    }
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+
+        string[] objetos = { "Piedra", "Mapa", "Llave", "Poción" };
+
+        foreach (string objeto in objetos)
+        {
+            if (objeto == "Llave")
+            {
+                Debug.Log("Llave encontrada");
+                break;
+            }
+        }
+    }
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+        for (int i = 1; i <= 20; i++)
+        {
+            if (i % 2 == 0)
+            {
+                continue;
+            }
+
+            Debug.log(i);
+        }
+    }
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+        int energia = 100;
+        while (energia > 0)
+        {
+            Debug.Log("Energia: " + energia);
+            energia -= 20;
+            if (energia <= 0)
+            {
+                Debug.Log("Energia agotada");
+                break;
+            }
+        }
+    }
+
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+        string[] enemigos = { "Slime", "Zombie", "Boss", "Orco" };
+
+        foreach (string enemigo in enemigos)
+        {
+            if (enemigo == "Boss")
+            {
+                Debug.Log("Jefe final encontrado")
+
+
+                break;
+            }
+
+            Debug.log(enemigo);
+        }
+
+    }
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+        for (int i = 0; i < 5; i++)
+        {
+            HacerDaño();
+
+        }
+    }
+
+    void HacerDaño()
+    {
+        Debug.Log("Daño realizado");
+    }
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+        MostrarItem("Espada");
+        MostrarItem("Pocion");
+    }
+
+    void MostrarItem(string item)
+    {
+        Debug.Log("Item: " +  item);
+    }
+
+}
+public class epico : MonoBehaviour
+{
+    void Start()
+    {
+        EstaVivo(true);
+        EstaVivo(false);
+
+    }
+
+    void EstaVivo(bool vivo)
+    {
+        if (!vivo)
+        {
+            Debug.log("Enemigo muerto");
+            return;
+        }
+
+        Debug.Log("Enemigo vivo");
+    }
+}
+public class Ejercicio19 : MonoBehaviour
+{
+    void Start()
+    {
+        string[] items = { "Pocion", "Escudo", "Legendario", "Espada" };
+
+        foreach (string item in items)
+        {
+            if (item == "Legendario")
+            {
+                Debug.Log("Item raro encontrado");
+                break;
+            }
+
+            Debug.log(item);
+        }
+    }
+}
+public class Ejercicio20 : MonoBehaviour
+{
+    void Start()
+    {
+        for (int fila = 0; fila < 8; fila++)
+        {
+            string linea = "";
+
+            for (int columna = 0; columna < 8; columna++)
+            {
+                if ((fila + columna) % 2 == 0)
+                {
+                    linea += "■ ";
+                }
+                else
+                {
+                    linea += "□ ";
+                }
+            }
+
+            Debug.log(linea);
+        }
+    }
+}
+public class Ejercicio6 : MonoBehaviour
+{
+    void Start()
+    {
+        string[] inventario = { "Espada", "Pocion", "Escudo", "Arco" };
+
+        foreach (string item in inventario)
+        {
+            Debug.Log(item);
+        }
+    }
+}
+public class Ejercicio7 : MonoBehaviour
+{
+    void Start()
+    {
+        string[] enemigos = { "Zombie", "Slime", "Boss", "Orco" };
+
+        for (int i = 0; i < enemigos.Length; i++)
+        {
+            Debug.Log(enemigos[i]);
+        }
+    }
+}
+public class Ejercicio8 : MonoBehaviour
+{
+    void Start()
+    {
+        int[] puntajes = { 100, 250, 400, 800 };
+
+        foreach (int puntaje in puntajes)
+        {
+            Debug.Log(puntaje);
+        }
+    }
+}
+public class Ejercicio9 : MonoBehaviour
+{
+    void Start()
+    {
+        int[] monedas = { 10, 20, 15, 5 };
+        int total = 0;
+
+        for (int i = 0; i < monedas.Length; i++)
+        {
+            total += monedas[i];
+        }
+
+        Debug.Log("Total de monedas: " + total);
+    }
+}
+
+public class Ejercicio10 : MonoBehaviour
+{
+    void Start()
+    {
+        string[] niveles = { "Bosque", "Cueva", "Castillo" };
+
+        foreach (string nivel in niveles)
+        {
+            Debug.Log("Nivel desbloqueado: " + nivel);
+        }
+    }
+}
